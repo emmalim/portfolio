@@ -8,161 +8,112 @@
 /*ALL PAGES--------------------------------------------------------------------*/
 
 body {
-    font-family: "Inter";
-    color: #FAF9F6;
-    background-color: #89AB66;
+    font-family: "Helvetica Neue";
+    color: black;
+    background-color: white;
 }
 
+main {
+    width: 70%;
+    float: right; 
+    margin-right: 2%;
+}
+
+.left {
+    width: 20%;
+    float: left;
+}
+
+
+
+/*NAV BAR----------------------------------------------------------------------*/
 nav {
     font-family: "Inter";
-    column-count: 3; 
-    margin-top: 20px;
-    margin-left: 12px;
-    width: 50%;
+    font-size: 30px;
+    width: 24%;
+    float: left;
+    position: fixed;
+
 }
 
-#navBar {
-    max-height: 56px;
+.navBar {
+    padding-top: 24%;
 }
 
-main.content {
-    background-color: #537150;
-    min-height: 400px;
-    padding-left: 8%;
-    padding-right: 8%;
-    padding-top: 5%;
-    padding-bottom: 10%;
-    border-radius: 15px 15px 15px 15px; /*topL, topR, bottomR, bottomL*/
+.nav {
+    margin-top: 30%;
 }
 
-main.contentWork {
-    background-color: #537150;
-    min-height: 400px;
-    padding-left: 8%;
-    padding-right: 8%;
-    padding-top: 5%;
-    padding-bottom: 10%;
-    border-radius: 15px 15px 15px 15px; /*topL, topR, bottomR, bottomL*/
-    align-content: center;
-}
-
-#designPageContent {
-    background-color: #FAF9F6;
-    color: #172741;
-    min-height: 400px;
-    padding-left: 8%;
-    padding-right: 8%;
-    padding-top: 5%;
-    padding-bottom: 10%;
-    border-radius: 15px 15px 15px 15px; /*topL, topR, bottomR, bottomL*/
+.nav div{
+    list-style: none;
+    margin-bottom: 10%;
 }
 
 
 /*EDITING TEXT-----------------------------------------------------------------*/
+a{
+    text-decoration: none;
+    color: black;
+}
 
-a {
+a:visited{
     text-decoration: none;
 }
 
-a:hover { /*this code changes the appearance of the links when you hover over them*/
-    text-decoration: none;
-}
-
-a:visited {
-    color: #172741;
+h1{
+    font-weight: normal;
 }
 
 
 /*ABOUT PAGE-------------------------------------------------------------------*/
-div.bio {
-    column-count: 2;
-    display: block;
-}
-
-#bioText {
-    padding-top: 50px;
-}
 
 
 /*WORK PAGE--------------------------------------------------------------------*/
+#projType {
+    display: flex;
+    text-align: center;
+    column-count: 3;
+    margin-top: 5%;
+}
+
+.content{
+    padding-top: 2%;
+}
+
 #projPreview {
     display: flex;
     text-align: center;
-    column-count: 2;
+    margin-top: 5%;
 }
 
-div.projBlock {
-    background-color: #FAF9F6;
-    display: table;
-    color: #172741;
-    width: 90%;
-    float: center;
-    align-content: center;
-    border-radius: 15px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin: 2%;
+/*tried to change the work gallery image on hover, this isn't working though*/
+#galleryVR{
+    background: url("images/work/VR/gallery_VR_0") no-repeat;
 }
 
-div.projBlock:hover {
-    background-color: #89AB66;
+#galleryVR:hover{
+    background: url("images/work/VR/gallery_VR_1") no-repeat;
 }
-
-
 
 /*IMAGES-----------------------------------------------------------------------*/
-#aboutPic {
-    max-width: 75%;
-}
-
-
 
 
 /*FOOTER-----------------------------------------------------------------------*/
-
-footer.footerText {
-    color: #172741;
-    text-align: center;
+.footerText{
+    margin-top: 60%;
+    font-size: 50%;
+    padding-left: 12%;
 }
 
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
+/*FLEX CONTAINER---------------------------------------------------------------*/
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    column-count: 2;
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
   }
-
-    
-    
-    
-.contact{
-    text-align: center;
-    padding: 20px;
-    color:rgb(5, 91, 71);
-    font-family: "Inter";
-}
-
-.contact input{
-    border: 0;
-    border-radius: 5px;
-	width: 30%;
-	margin: 0 0 15px;
-	padding: 15px;
-	font-size: 20px;
-    color:rgb(21, 21, 21);
-    background-color: rgb(233, 233, 233);
-}
-
-#contactformBtn{
-    border: 0;
-    background-color:rgb(5, 91, 71);
-    color: white;
-    padding: 20px;
-    width: 20%;
-    font-size: 20px;
-}
-
-
-
-
-
-
-
