@@ -41,6 +41,7 @@ nav {
 
 .navBar {
     padding-top: 24%;
+    margin-left: 12%;
     height: 100%;
 }
 
@@ -53,6 +54,9 @@ nav {
     margin-bottom: 10%;
 }
 
+#page{
+    margin-bottom: 8%;
+}
 
 /*EDITING TEXT-----------------------------------------------------------------*/
 a{
