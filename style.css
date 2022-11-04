@@ -122,6 +122,13 @@ h1{
     padding-top: 2%;
 }
 
+.desc{
+    box-shadow: 5px 10px 20px 5px #dee0e3;
+    border-radius: 15px;
+    padding: 2%;
+    margin-bottom: 3%;
+}
+
 /*tried to change the work gallery image on hover, this isn't working though*/
 #testBlock{
     background-image: url("/images/work/VR/gallery_VR_0") no-repeat;
@@ -141,7 +148,7 @@ h1{
     font-size: 50%;
     padding-left: 12%;
     margin-bottom: 0;
-    margin-top: 200px;
+    margin-top: 180px;
 }
 
 /*FLEX CONTAINER---------------------------------------------------------------*/
