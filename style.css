@@ -18,7 +18,7 @@ main {
     margin-right: 2%;
     padding: 0;
     font-family: "Helvetica", "Arial", sans-serif;
-
+    font-size: 1rem;
 }
 
 .left {
@@ -74,17 +74,32 @@ h1{
 
 
 /*ABOUT PAGE-------------------------------------------------------------------*/
-#bioPic{
+#indexPic{
     padding:0;
     margin:0;
     max-width: 35%;
+    text-align: center;
     float: left;
 }
 
-#bioText{
+#indexText{
     max-width: 55%;
     float: right;
     margin-right: 2%;
+}
+
+#bioPic{
+    padding:0;
+    margin:0;
+    text-align: center;
+}
+
+#bioText{
+    margin-top: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    float: center;
 }
 
 /*WORK PAGE--------------------------------------------------------------------*/
@@ -152,6 +167,7 @@ h1{
     font-size: 50%;
     margin-bottom: 0;
     margin-top: 180px;
+    position: absolute;
 }
 
 /*FLEX CONTAINER---------------------------------------------------------------*/
