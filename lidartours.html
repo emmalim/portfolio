@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet"> 
+        <link rel="icon" type="image/x-icon" href="images/favicon.png">
+        <title>LiDARTours (2022)</title>
+    </head>
+    <body>
+      
+        <nav>
+            <div class="navBar">
+                <div id="logo">
+                    <h3 style="font-size: 45px"><a href="index.html">EMMA LIM</a></h3>
+                </div>
+
+                <div id="nav">
+                    <div id="page"><a href="work.html">WORK</a></div>
+                    <div id="page"><a href="about.html">ABOUT</a></div>
+                    <div id="page"><a href="contact.html">CONTACT</a></div>
+                </div>
+                
+                
+                <div class="footerText">
+                    <p>Made by Emma Lim.</p>
+                    <a class="social-icons" href="https://www.linkedin.com/in/lim-emma" target="_blank" style="padding-right:10px"><img src="images/footer/linkedin.png" style="max-width: 25px" alt="github"></a>
+                    <a class="social-icons" href="https://github.com/emmalim" target="_blank"><img src="images/footer/github.png" style="max-width: 25px" alt="github"></a>
+                </div>
+            </div>   
+        </nav>
+      
+        
+        <main class="content">
+            
+            <h1 style="text-align:center"><a href="VR.html" style="text-decoration:none">←   </a>LiDARTours (2022)</h1>
+            
+                <div id="projText">
+                    <div id="video" style="text-align: center">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/6gS6Y8G2Ta4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                        
+                        
+                    <h3>SYNOPSIS</h3>
+                    <p><em>LiDARTours (2022)</em> is a collaborative project made by me and a team of 3 other college students for WHACK 2022 (Wellesley College’s Hackathon).</p><br>
+                    
+                    
+                    <h3>DEVELOPMENT</h3>
+                    <div class="desc">
+                        <b>Part 1: 3D Scanning</b>
+                        <p>3D scans were made of the room using the Polycam app. Our team was impressed by the quality of the scans and how detailed some of the smaller objects in the room appeared. Our first scan showed an abundance of imperfections, including distorted objects, blurred areas and duplicated objects.  The second scan was done at a much slower pace than the first scan to get as much detail as possible, but there are still imperfections that can be seen in our demo video.</p>
+                    </div>
+                    
+                    <div class="desc">
+                        <b>Part 2: Upload to Blender and Implementing in VR</b> 
+                        <p>Once the scan was uploaded to Sketchfab, we downloaded the model and imported it into Blender to make small edits. Our original plan was to then import the Blender model into Unity as an asset and be able to teleport around/interact with small objects in the room but the model kept importing without the texture. It was really difficult trying to resolve this issue because there wasn’t any online documentation that was helpful in regards to moving 3D scans from Blender to Unity. Luckily, Blender has a VR feature so we ultimately decided to implement our project with that rather than Unity and SteamVR. Unfortunately, this means that we aren’t able to include some extra functionality, such as pop-up texts and interactable objects, into our project as we had hoped.</p>
+                    </div>
+                    
+                    <div class="desc">
+                        <b>Part 3: Cleaning the 3D model</b> 
+                        <p>Once we figured out how to implement our project in VR, we tried to clean up our 3D model to fix some of the blatant imperfections. As our team is unfamiliar with how to navigate Blender, smoothing out some of the areas that were rendered with less detail proved to be a challenge. Most of the major imperfections were fixed, though part of the ceiling, the side of the desk, and the chair are lacking in quality compared to the rest of the room. With more time and with a deeper understanding of how Blender works, it would be better to have the model as clean as possible to make the environment as realistic as possible.</p>  
+                    </div>
+            </div>
+        </main>
+    </body>
+</html>
