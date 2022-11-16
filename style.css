@@ -106,7 +106,6 @@ h1{
 #projType {
     display: flex;
     text-align: center;
-    column-count: 3;
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 5%;
