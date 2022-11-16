@@ -107,8 +107,11 @@ h1{
     display: flex;
     text-align: center;
     column-count: 3;
-    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
 }
+
 
 .content{
     padding-top: 2%;
