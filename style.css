@@ -144,11 +144,17 @@ h1{
     padding-top: 2%;
 }
 
-.desc{
+.develop{
     box-shadow: 5px 10px 20px 5px #dee0e3;
     border-radius: 15px;
     padding: 2%;
     margin-bottom: 3%;
+}
+
+.desc{
+    margin-bottom: 3%;
+    max-width: 80%;
+    padding-left: 2%;
 }
 
 /*tried to change the work gallery image on hover, this isn't working though*/
@@ -160,8 +166,10 @@ h1{
     background-image: url("/images/work/VR/gallery_VR_1") no-repeat;
 }
 
-/*IMAGES-----------------------------------------------------------------------*/
-
+/*TEXT-----------------------------------------------------------------------*/
+ul{
+    margin-top:0;
+}
 
 /*FOOTER-----------------------------------------------------------------------*/
 .footerText{
