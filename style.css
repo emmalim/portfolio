@@ -1,4 +1,4 @@
-/* Filename: style.css
+ku/* Filename: style.css
    Author: Emma Lim
    Date Modified: October 25, 2022
 */
@@ -13,49 +13,42 @@ body {
 }
 
 main {
-    width: 70%;
+    width: 100%;
     float: right; 
-    margin-right: 2%;
-    padding: 0;
     font-family: "Helvetica", "Arial", sans-serif;
     font-size: 1rem;
 }
-
-.left {
-    width: 20%;
-    float: left;
-}
-
-
 
 /*NAV BAR----------------------------------------------------------------------*/
 nav {
     font-family: "Inter", "Helvetica", sans-serif;
     font-size: 30px;
-    width: 24%;
-    float: left;
-    position: fixed;
+    width: 100%;
     box-shadow: 5px 10px 20px 5px #dee0e3;
-    height: 100%;
+    height: 10%;
 }
 
 .navBar {
-    padding-top: 24%;
     margin-left: 12%;
     height: 100%;
 }
 
-.nav {
-    margin-top: 25%;
+#logo {
+    width: 80%;
 }
 
-.nav div{
+/*.nav {
+    margin-top: 25%;
+}*/
+
+/*.nav div{
     list-style: none;
     margin-bottom: 10%;
-}
+}*/
 
 #page{
     margin-bottom: 8%;
+    width: 25%;
 }
 
 /*EDITING TEXT-----------------------------------------------------------------*/
@@ -189,7 +182,60 @@ ul{
 }
 
 /* Responsive layout - makes a one column layout instead of a two-column layout */
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .flex-container {
     flex-direction: column;
   }
+}
+    
+@media screen and (min-width:796px){
+    nav {
+        font-family: "Inter", "Helvetica", sans-serif;
+        font-size: 30px;
+        width: 24%;
+        float: left;
+        position: fixed;
+        box-shadow: 5px 10px 20px 5px #dee0e3;
+        height: 100%;
+    }
+
+    .navBar {
+        padding-top: 24%;
+        margin-left: 12%;
+        height: 100%;
+    }
+
+    .nav {
+        margin-top: 25%;
+    }
+
+    .nav div{
+        list-style: none;
+        margin-bottom: 10%;
+    }
+
+    #page{
+        margin-bottom: 8%;
+    }
+
+    .footerText{
+        font-size: 50%;
+        margin-bottom: 0;
+        margin-top: 180px;
+        position: absolute;
+    }
+    
+    /*.left {
+        width: 20%;
+        float: left;
+    }*/
+    
+    main {
+        width: 70%;
+        float: right; 
+        margin-right: 2%;
+        padding: 0;
+        font-family: "Helvetica", "Arial", sans-serif;
+        font-size: 1rem;
+    }
+}
