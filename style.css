@@ -1,58 +1,64 @@
-/* Filename: style.css
+ku/* Filename: style.css
    Author: Emma Lim
    Date Modified: October 25, 2022
 */
 
-/*ALL PAGES IN ALL FORMATS-------------------------------------------------------*/
-* {
-    box-sizing: border-box;
-}
-    
-.col-1{width: 8.33%;}
-.col-2{width: 16.66%;}
-.col-3{width: 25%;}
-.col-4{width: 33.33%;}
-.col-5{width: 41.66%;}
-.col-6{width: 50%;}
-.col-7{width: 58.33%;}
-.col-8{width: 66.66%;}
-.col-9{width: 75%;}
-.col-10{width: 83.33%;}
-.col-11{width: 91.66%;}
-.col-12{width: 100%;}
 
-[class*="col-"] {
-    float: left;
-}
 
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
+/*ALL PAGES--------------------------------------------------------------------*/
 
 body {
     color: black;
     background-color: white;
-    padding: 0;
-    font-family: "Helvetica", "Arial", sans-serif;
-
 }
 
 main {
-    width: 100%;
+    width: 70%;
     float: right; 
+    margin-right: 2%;
+    padding: 0;
+    font-family: "Helvetica", "Arial", sans-serif;
     font-size: 1rem;
-    margin-right: 0;
 }
 
-.flex-container {
-    display: flex;
-    flex-direction: row;
-    column-count: 2;
+.left {
+    width: 20%;
+    float: left;
 }
 
-/*EDITING TEXT-----------------------------------------------EDITING TEXT*/
+
+
+/*NAV BAR----------------------------------------------------------------------*/
+nav {
+    font-family: "Inter", "Helvetica", sans-serif;
+    font-size: 30px;
+    width: 24%;
+    float: left;
+    position: fixed;
+    box-shadow: 5px 10px 20px 5px #dee0e3;
+    height: 100%;
+}
+
+.navBar {
+    padding-top: 24%;
+    margin-left: 12%;
+    height: 100%;
+}
+
+.nav {
+    margin-top: 25%;
+}
+
+.nav div{
+    list-style: none;
+    margin-bottom: 10%;
+}
+
+#page{
+    margin-bottom: 8%;
+}
+
+/*EDITING TEXT-----------------------------------------------------------------*/
 a{
     text-decoration: none;
     color: black;
@@ -69,68 +75,21 @@ h1{
 #textLink{
     color: blue;
 }
-/*NAV BAR----------------------------------------------------------------------*/
-nav {
-    font-family: "Inter", "Helvetica", sans-serif;
-    width: 100%;
-    box-shadow: 0px 10px 20px 0px #dee0e3;
-    
-}
-
-.navBar {
-    padding-left: 2%;
-    height: 10%;
-    font-size: 30px;
-}
-
-.navBar h3 {
-    margin: 0;
-    float: left;
-}
-
-#navItems{
-    display: none;
-}
-
-#mobileNav{
-    display: inherit;
-    padding-right: 2%;
-    width: 20%;
-    margin: 0;
-    float: right;
-}
-
-/*.nav {
-    margin-top: 25%;
-}*/
-
-/*.nav div{
-    list-style: none;
-    margin-bottom: 10%;
-}*/
-
-#page{
-    margin-bottom: 8%;
-    width: 25%;
-}
-
-#pageTitle{
-    text-align:center; 
-    margin-bottom: 4%;
-}
 
 /*ABOUT PAGE-------------------------------------------------------------------*/
 #indexPic{
-    padding: 0;
-    margin: auto;
+    padding:0;
+    margin:0;
+    max-width: 35%;
     text-align: center;
-    min-width: 45%;
+    float: left;
 }
 
 #indexText{
-    margin: auto;
+    max-width: 55%;
+    float: right;
+    margin-right: 2%;
 }
-
 
 #bioPic{
     padding:0;
@@ -147,26 +106,6 @@ nav {
 }
 
 /*WORK PAGE--------------------------------------------------------------------*/
-#projPic{
-    margin: auto;
-    text-align: center;
-}
-
-#projPic img {
-    width: 100%;
-}
-
-#projText{
-    margin: auto;
-    font-size: 2rem;
-    text-align: center;
-}
-
-#projCard{
-    margin-bottom: 2%;
-}
-
-
 #projType {
     display: flex;
     text-align: center;
@@ -186,12 +125,26 @@ nav {
     margin-top: 5%;
 }
 
+.projBlock{
+    padding: 0;
+    padding-top: 2%;
+    margin: 2%;
+    border-radius: 15px;
+    box-shadow: 5px 10px 20px 5px #dee0e3;
+}
 
-#projInfo{
+.projBlock:hover{
+    box-shadow: 5px 10px 20px 5px #dee0e3;
+}
+
+.projBlock a:hover{
+    text-decoration: none;
+}
+
+#projText{
     padding: 5%;
     padding-top: 2%;
 }
-
 
 .develop{
     box-shadow: 5px 10px 20px 5px #dee0e3;
@@ -222,112 +175,33 @@ ul{
 
 /*FOOTER-----------------------------------------------------------------------*/
 .footerText{
-    font-size: 1rem;
-    position: relative;
-    margin-left: 2%;
-    margin-top: 5%;
-    max-height: 50px;
-}
-
-.footer{
-    text-align: center;
-    margin-top: 2%;
-    margin-bottom: 5%;
-}
-
-.footer p{
-    margin-bottom: 1%;
+    font-size: 50%;
+    margin-bottom: 0;
+    margin-top: 180px;
+    position: absolute;
 }
 
 /*FLEX CONTAINER---------------------------------------------------------------*/
-
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    column-count: 2;
+}
 
 /* Responsive layout - makes a one column layout instead of a two-column layout */
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   .flex-container {
     flex-direction: column;
   }
 }
-
-@media screen and (min-width:796px){ /*larger than phone*/
     
-    nav {
-        font-family: "Inter", "Helvetica", sans-serif;
+@media  screen and (max-width:750px){
+    nav{
         font-size: 30px;
-        width: 24%;
-        float: left;
+        width: 100%;
+        text-decoration: underline;
         position: fixed;
         box-shadow: 5px 10px 20px 5px #dee0e3;
-        height: 100%;
-    }
-
-    .navBar {
-        padding-top: 100px;
-        margin-left: 12%;
-        height: 100%;
-    }
-    
-    .navBar h3 {
-        margin-bottom: 50px;
-    }
-
-    
-    #logo {
-        width: 80%;
-    }
-    
-    .nav div{
-        list-style: none;
-        margin-bottom: 10%;
-    }
-
-    #page{
-        margin-bottom: 25px;
-    }
-
-    .footer{
-        text-align: center;
-        margin-top: 2%;
-        margin-bottom: 2%;
-    }
-
-    
-    /*.left {
-        width: 20%;
-        float: left;
-    }*/
-    
-    main {
-        width: 70%;
-        float: right; 
-        margin-right: 2%;
-        padding: 0;
-        font-family: "Helvetica", "Arial", sans-serif;
-        font-size: 1rem;
-    }
-    
-    #indexPic{
-        max-width: 45%;
-    }
-    
-    #projPic{
-        margin: 0;
-        text-align: none;  
-    }
-    
-    #projPic img {
-        max-width: 80%;
-    }
-    
-    #projText{
-        font-size: 2rem;
-    }
-    
-    #navItems{
-        display: contents;
-    }
-    
-    #mobileNav{
-        display: none;
+        height: 10%;
     }
 }
