@@ -143,6 +143,10 @@ nav {
     text-align: center;
 }
 
+#projPic img {
+    width: 100%;
+}
+
 #projText{
     margin: auto;
     font-size: 2rem;
@@ -301,6 +305,10 @@ ul{
     #projPic{
         margin: 0;
         text-align: none;  
+    }
+    
+    #projPic img {
+        max-width: 80%;
     }
     
     #projText{
