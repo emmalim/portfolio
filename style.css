@@ -87,9 +87,9 @@ nav {
     margin-top: 0;
 }
 
-/*#navItems{
-    visibility: hidden;
-}*/
+#navItems{
+    display: none;
+}
 
 /*.nav {
     margin-top: 25%;
@@ -253,14 +253,9 @@ ul{
     }
 
     .navBar {
-        padding-top: 34%;
+        padding-top: 100px;
         margin-left: 12%;
         height: 100%;
-    }
-
-    
-    .nav {
-        margin-top: 25%;
     }
 
     
@@ -274,7 +269,7 @@ ul{
     }
 
     #page{
-        margin-bottom: 8%;
+        margin-bottom: 25px;
     }
 
     .footer{
@@ -316,6 +311,6 @@ ul{
     }
     
     #navItems{
-        visibility: inherit;
+        display:contents;
     }
 }
