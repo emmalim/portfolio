@@ -84,11 +84,20 @@ nav {
 }
 
 .navBar h3 {
-    margin-top: 0;
+    margin: 0;
+    float: left;
 }
 
 #navItems{
     display: none;
+}
+
+#mobileNav{
+    display: inherit;
+    padding-right: 2%;
+    width: 20%;
+    margin: 0;
+    float: right;
 }
 
 /*.nav {
@@ -257,6 +266,10 @@ ul{
         margin-left: 12%;
         height: 100%;
     }
+    
+    .navBar h3 {
+        margin-bottom: 50px;
+    }
 
     
     #logo {
@@ -311,6 +324,10 @@ ul{
     }
     
     #navItems{
-        display:contents;
+        display: contents;
+    }
+    
+    #mobileNav{
+        display: none;
     }
 }
