@@ -4,6 +4,32 @@
 */
 
 /*ALL PAGES IN ALL FORMATS-------------------------------------------------------*/
+* {
+    box-sizing: border-box;
+}
+    
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+[class*="col-"] {
+    float: left;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
 
 body {
     color: black;
@@ -24,6 +50,24 @@ main {
     flex-direction: row;
     column-count: 2;
 }
+
+/*EDITING TEXT-----------------------------------------------EDITING TEXT*/
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+h1{
+    font-weight: normal;
+}
+
+#textLink{
+    color: blue;
+}
 /*NAV BAR----------------------------------------------------------------------*/
 nav {
     font-family: "Inter", "Helvetica", sans-serif;
@@ -32,7 +76,7 @@ nav {
 }
 
 .navBar {
-    margin-left: 12%;
+    margin-left: 2%;
     height: 100%;
     font-size: 30px;
 }
@@ -51,23 +95,7 @@ nav {
     width: 25%;
 }
 
-/*EDITING TEXT-----------------------------------------------------------------*/
-a{
-    text-decoration: none;
-    color: black;
-}
 
-a:hover{
-    text-decoration: underline;
-}
-
-h1{
-    font-weight: normal;
-}
-
-#textLink{
-    color: blue;
-}
 
 /*ABOUT PAGE-------------------------------------------------------------------*/
 #indexPage{
@@ -75,16 +103,16 @@ h1{
 }
 
 #indexPic{
-    padding:0;
-    margin:0;
-    max-width: 35%;
+    padding: 0;
+    margin: auto;
     text-align: center;
-    float: left;
+    min-width: 45%;
 }
 
 #indexText{
-    max-width: 55%;
+    margin: auto;
 }
+
 
 #bioPic{
     padding:0;
@@ -198,34 +226,6 @@ ul{
 }
 
 @media screen and (min-width:796px){ /*larger than phone*/
-    * {
-        box-sizing: border-box;
-    }
-    
-    .col-1{width: 8.33%;}
-    .col-2{width: 16.66%;}
-    .col-3{width: 25%;}
-    .col-4{width: 33.33%;}
-    .col-5{width: 41.66%;}
-    .col-6{width: 50%;}
-    .col-7{width: 58.33%;}
-    .col-8{width: 66.66%;}
-    .col-9{width: 75%;}
-    .col-10{width: 83.33%;}
-    .col-11{width: 91.66%;}
-    .col-12{width: 100%;}
-
-    [class*="col-"] {
-        float: left;
-        border: solid 1px;
-    }
-
-    .row::after {
-        content: "";
-        clear: both;
-        display: table;
-    }
-    
     
     nav {
         font-family: "Inter", "Helvetica", sans-serif;
@@ -281,4 +281,6 @@ ul{
         font-family: "Helvetica", "Arial", sans-serif;
         font-size: 1rem;
     }
+    
+
 }
