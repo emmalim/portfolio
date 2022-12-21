@@ -13,21 +13,18 @@
         <nav>
             <div class="navBar">
                 <div id="logo">
-                    <h3 style="font-size: 45px"><a href="index.html">EMMA LIM</a></h3>
+                    <h3 style="font-size: 45px;"><a href="index.html">EMMA LIM</a></h3>
+                    
+                    <img id="mobileNav" src="images/navButton.png" style="width: 50px;">
                 </div>
 
-                <div id="nav">
+                <div id="navItems">
                     <div id="page"><a href="work.html">WORK</a></div>
                     <div id="page"><a href="about.html">ABOUT</a></div>
                     <div id="page"><a href="https://www.linkedin.com/in/lim-emma">CONTACT</a></div>
                 </div>
                 
                 
-                <div class="footerText">
-                    <p>Made by Emma Lim.</p>
-                    <a class="social-icons" href="https://www.linkedin.com/in/lim-emma" target="_blank" style="padding-right:10px"><img src="images/footer/linkedin.png" style="max-width: 25px" alt="github"></a>
-                    <a class="social-icons" href="https://github.com/emmalim" target="_blank"><img src="images/footer/github.png" style="max-width: 25px" alt="github"></a>
-                </div>
             </div>   
         </nav>
        
@@ -36,12 +33,12 @@
             
             <h1 style="text-align:center">WELCOME</h1>
             
-            <div class="index">
-                <div id="indexPic">
-                    <img id="aboutPic" src="images/about/EmmaLim.JPG" alt="photo of Emma Lim" style="max-width: 90%; border-radius: 50%">
+            <div class="flex-container" id="indexPage">
+                <div class="col-4" id="indexPic">
+                    <img id="aboutPic" src="images/about/EmmaLim.JPG" alt="photo of Emma Lim" style="max-width: 65%; border-radius: 50%">
                 </div>
                 
-                <div id="indexText">
+                <div class="col-8" id="indexText">
                     <h3>Hi, nice to meet you!</h3>
                     <p>I’m Emma, a third-year student at Wellesley College majoring in Computer Science and minoring in Korean.
                     </p>
@@ -49,11 +46,19 @@
                     I love to create and my passion for this fuels my desire to make meaningful products. My love for game design and UI/UX development began as an 8th grader on <a href="https://www.scratch.mit.edu">Scratch</a>. Between the HCI and game design courses I have taken, my time at Wellesley has allowed me to nurture my love of the intersection between art and technology.
                     </p>
                     
-                    <p>Please note that this website would be best viewed on a laptop/desktop computer as it is not yet responsive to fit mobile screens. Sorry for the inconvenience!</p>
                 </div>    
 
             </div>
+            
+            
+            <div class="footer">
+                <p>Made by Emma Lim.</p>
+                <a class="social-icons" href="https://www.linkedin.com/in/lim-emma" target="_blank" style="padding-right:10px"><img src="images/footer/linkedin.png" style="max-width: 25px" alt="github"></a>
+                <a class="social-icons" href="https://github.com/emmalim" target="_blank"><img src="images/footer/github.png" style="max-width: 25px" alt="github"></a>
+            </div>
         </main>
         
+        
+        <script src="portfolio.js"></script>
     </body>
 </html>
