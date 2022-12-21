@@ -43,6 +43,7 @@ main {
     width: 100%;
     float: right; 
     font-size: 1rem;
+    margin-right: 0;
 }
 
 .flex-container {
@@ -95,13 +96,12 @@ nav {
     width: 25%;
 }
 
-
-
-/*ABOUT PAGE-------------------------------------------------------------------*/
-#indexPage{
-    float: center;
+#pageTitle{
+    text-align:center; 
+    margin-bottom: 4%;
 }
 
+/*ABOUT PAGE-------------------------------------------------------------------*/
 #indexPic{
     padding: 0;
     margin: auto;
@@ -129,6 +129,22 @@ nav {
 }
 
 /*WORK PAGE--------------------------------------------------------------------*/
+#projPic{
+    margin: auto;
+    text-align: center;
+}
+
+#projText{
+    margin: auto;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#projCard{
+    margin-bottom: 2%;
+}
+
+
 #projType {
     display: flex;
     text-align: center;
@@ -148,26 +164,12 @@ nav {
     margin-top: 5%;
 }
 
-.projBlock{
-    padding: 0;
-    padding-top: 2%;
-    margin: 2%;
-    border-radius: 15px;
-    box-shadow: 5px 10px 20px 5px #dee0e3;
-}
 
-.projBlock:hover{
-    box-shadow: 5px 10px 20px 5px #dee0e3;
-}
-
-.projBlock a:hover{
-    text-decoration: none;
-}
-
-#projText{
+#projInfo{
     padding: 5%;
     padding-top: 2%;
 }
+
 
 .develop{
     box-shadow: 5px 10px 20px 5px #dee0e3;
@@ -208,7 +210,7 @@ ul{
 .footer{
     text-align: center;
     margin-top: 2%;
-    margin-bottom: 2%;
+    margin-bottom: 5%;
 }
 
 .footer p{
@@ -219,7 +221,7 @@ ul{
 
 
 /* Responsive layout - makes a one column layout instead of a two-column layout */
-@media (max-width: 900px) {
+@media (max-width: 796px) {
   .flex-container {
     flex-direction: column;
   }
@@ -261,12 +263,12 @@ ul{
         margin-bottom: 8%;
     }
 
-    .footerText{
-        margin-bottom: 0;
-        margin-top: 580px;
-        padding-left: 2%;
-        position: fixed;
+    .footer{
+        text-align: center;
+        margin-top: 2%;
+        margin-bottom: 2%;
     }
+
     
     /*.left {
         width: 20%;
@@ -282,5 +284,16 @@ ul{
         font-size: 1rem;
     }
     
-
+    #indexPic{
+        max-width: 45%;
+    }
+    
+    #projPic{
+        margin: 0;
+        text-align: none;  
+    }
+    
+    #projText{
+        font-size: 2rem;
+    }
 }
