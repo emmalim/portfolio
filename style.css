@@ -180,17 +180,35 @@ nav {
     float: center;
 }
 
+
+#playlists{
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    float: center;
+}
+
+
 /*WORK PAGE--------------------------------------------------------------------*/
 #projPic{
     margin: auto;
     text-align: center;
 }
 
-#projPic img {
+#projCard img {
     width: 100%;
 }
 
-#projPic img:hover {
+#projPicMobile {
+    display: inline-block;
+    text-align: center;
+}
+
+#projPicDesktop {
+    display: none;
+}
+
+#projCard img:hover {
     opacity: 0.5;
 }
 
@@ -325,9 +343,19 @@ ul{
 
 /* Responsive layout - makes a one column layout instead of a two-column layout */
 @media (max-width: 900px) {
-  .flex-container {
-    flex-direction: column;
-  }
+    .flex-container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    #projPicMobile {
+        display: none;
+    }
+    
+    #projPicDesktop {
+        display: block;
+    }
 }
 
 @media screen and (min-width:796px){ /*larger than phone*/
@@ -396,9 +424,11 @@ ul{
         text-align: none;  
     }
     
-    #projPic img {
+    #projCard img {
         max-width: 80%;
     }
+    
+    
     
     #projText{
         font-size: 2rem;
