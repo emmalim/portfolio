@@ -42,11 +42,32 @@
             <h1 style="text-align:center">ABOUT</h1>
             
             <div class="bio">
-                <div id="bioPic">
-                    <img id="aboutPic" src="images/about/emma1.png" alt="my first DJ gig" style="max-width: 15rem; border-radius: 50%">
-                    <img id="aboutPic" src="images/about/emma6.png" alt="pic of emma" style="max-width: 15rem; border-radius: 50%">
-                    <img id="aboutPic" src="images/about/emma7.png" alt="golfing" style="max-width: 15rem; border-radius: 50%">
+                
+                <!--slideshow code-->
+                <div class="slideshow-container">
+                    <div class="slides">
+                        <img src="images/about/emma6.png" alt="pic of emma" style="max-width: 15rem;">
+                    </div>
+                    <div class="slides">
+                        <img src="images/about/emma7.png" alt="golfing" style="max-width: 15rem;">
+                    </div>
+                    <div class="slides">
+                        <img src="images/about/emma1.png" alt="first and only DJ gig" style="max-width: 15rem;">
+                    </div>
+                
+                    <!--forwards/backwards buttons-->
+                    <a class="prevButton" onclick="moveSlide(-1)">&#10094;</a>
+                    <a class="nextButton" onclick="moveSlide(1)">&#10095;</a>
                 </div>
+                
+                <!--dots/circles for slideshow-->
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+                
+                
                 
                 <div id="bioText">
                     <p>Outside of academics, I am a captain of Wellesley’s varsity golf team and a radio DJ @ WZLY (91.5 FM). In my spare time, I can often be found going on walks outside, trying to find a good matcha latte, reading Carnby Kim's webtoons, hanging out with my two brothers, or making new playlists. Check out some of my playlists down below!</p>   
