@@ -363,4 +363,15 @@ ul{
     .dropdown{
         display: none;
     }
+    
+    
+}
+
+
+
+@media screen and (max-width: 600px) {
+    #video iframe{
+        width: 400px;
+        height: 225px;
+    }
 }
