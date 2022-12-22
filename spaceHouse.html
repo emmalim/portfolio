@@ -42,8 +42,28 @@
             <h1 style="text-align:center"><a href="work.html" style="text-decoration:none">←   </a>Space House (2022)</h1>
             
                 <div id="projInfo">
-                    <img src="images/work/VR/vrPic1.jpeg" alt="house part of Space House" style="max-width: 45%">
-                    <img src="images/work/VR/vrPic2.jpeg" alt="planetarium portion of Space House" style="max-width: 45%">
+                    
+                    <!--slideshow code-->
+                    <div class="slideshow-container">
+                        <div class="slides">
+                            <img src="images/work/VR/vrPic1.jpeg" alt="house part of Space House" style="max-width: 85%;">
+                        </div>
+                        <div class="slides">
+                            <img src="images/work/VR/vrPic2.jpeg" alt="planetarium part of Space House" style="max-width: 85%;">
+                        </div>
+
+                        <!--forwards/backwards buttons-->
+                        <a class="prevButton" onclick="moveSlide(-1)">&#10094;</a>
+                        <a class="nextButton" onclick="moveSlide(1)">&#10095;</a>
+                    </div>
+
+                    <!--dots/circles for slideshow-->
+                    <div style="text-align: center; padding-top: 5px;">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                    </div>
+                    
+                   
                     
                     <h3>SYNOPSIS</h3>
                     <p><em>Space House (2022)</em> is the first of 2 projects I developed for CS 321: Extended Reality, Wellesley College’s virtual reality course that teaches students how to develop 3D VR games using Unity Game Engine and C# scripting. I worked with Julie Lely ‘23 over the course of 7 weeks to create Space House, an interactive VR experience that allows the player to travel between a house and a planetarium. After the initial 7 week period of the assignment, I further developed the experience to add an education aspect to the experience. When the player interacts with the planets in the planetarium, they are now able to learn more about each planet.</p><br>
