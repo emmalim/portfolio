@@ -418,6 +418,7 @@ ul{
     #indexPic{
         max-width: 45%;
     }
+
     
     #projPic{
         margin: 0;
@@ -447,6 +448,10 @@ ul{
         border-radius: 15px;
         padding: 2%;
         margin-bottom: 2%;
+    }
+    
+    .slideshow-container{
+        width: 65%;
     }
 }
 
