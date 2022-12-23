@@ -232,6 +232,10 @@ nav {
     margin-bottom: 5%;
 }
 
+.thumbnail{
+    width: 70%;
+}
+
 .content{
     padding-top: 2%;
 }
@@ -429,7 +433,9 @@ ul{
         max-width: 80%;
     }
     
-    
+    .thumbnail{
+        width: 50%;
+    }
     
     #projText{
         font-size: 2rem;
