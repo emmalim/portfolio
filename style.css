@@ -111,7 +111,7 @@ nav {
     float: right;
 }
 
-.dropdownMenu{ /*the actual dropdown menu (hidden by default)*/
+#dropdownMenu{ /*the actual dropdown menu (hidden by default)*/
     display: none;
     position: absolute;
     padding-top: 8%;
@@ -122,15 +122,17 @@ nav {
     z-index: 10;
 }
 
-.dropdownMenu a{ /*links in the dropdown menu*/
+#dropdownMenu a{ /*links in the dropdown menu*/
     display: block;
     text-align: right;
     padding-bottom: 15px;
 }
 
+/*
 .dropdown:hover .dropdownMenu {
   display: block;
 }
+*/
 
 .show {display:block;} /*show the menu*/
 

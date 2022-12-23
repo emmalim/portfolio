@@ -4,7 +4,7 @@ js file for Emma's portfolio
 
 /*clicking on the button will toggle btwn hiding/showing the  nav menu*/
 function toggleNav() {
-    var menu = document.getElementsByClassName("dropdownMenu");
+    var menu = document.getElementById("dropdownMenu");
     if (menu.style.display === "none") {
         menu.style.display = "block";
     } else {
