@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet"> 
+        <link href="css/slideshow.css" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="images/favicon.png">
+        <title>Sellesley (2022)</title>
+    </head>
+    <body>
+      
+        <nav>
+            <div class="navBar">
+                <div id="logo">
+                    <h3 style="font-size: 45px;"><a href="index.html">EMMA LIM</a></h3>
+                    <div class="dropdown">
+                        <button onclick="toggleNav()" class="navButton" ><img id="mobileNav" src="images/navButton.png" style="width: 50px;"></button>
+                        
+                        <div id="dropdownMenu">
+                            <div id="menuItem"><a id="dropdownContent" href="work.html">WORK</a></div>
+                            <div id="menuItem"><a id="dropdownContent" href="about.html">ABOUT</a></div>
+                            <div id="menuItem">
+                            <a id="dropdownContent" href="https://www.linkedin.com/in/lim-emma">CONTACT</a></div>
+                        </div>
+                    
+                    </div>
+                    
+                </div>
+
+                <div id="navItems">
+                    <div id="page"><a href="work.html">WORK</a></div>
+                    <div id="page"><a href="about.html">ABOUT</a></div>
+                    <div id="page"><a href="https://www.linkedin.com/in/lim-emma">CONTACT</a></div>
+                </div>
+                
+            </div>   
+        </nav>
+      
+        
+        <main class="content">
+            
+            <h1 style="text-align:center"><a href="work.html" style="text-decoration:none">←   </a>Sellesley (2022)</h1>
+            
+                <div id="projInfo">
+                    
+                    
+                    
+                    <h3>SYNOPSIS</h3>
+                    
+                    <p>Sellesley seeks to address the problem of inconvenience in buying and selling items on Wellesley College campus. Current available methods, such as Free &amp; For Sale (a Facebook group where students can post items they are trying to sell or in search for), campus craft fairs, Amazon, and retail stores are time-consuming, complicated, far, unorganized, and/or confusing. Our mission was to design a mobile application that poses as a single solution for our target population: Wellesley students who need a better way to buy and sell on campus. Throughout the 12 weeks of developing this project, I designed, prototyped, user-tested, iterated, and evaluated UIs.</p>
+                    
+                    <p><b>Tools:</b> Figma &#8226; BalsamiQ</p>
+                    
+                    <h3>DEVELOPMENT</h3>
+                    <div class="develop">
+                        <b>Part 1: Creating Empathy Maps and User Profiles</b> 
+                        <!--slideshow code-->
+                        <div class="slideshow-container">
+                            <div class="slides">
+                                <img src="images/work/sellesley/empathymap1.png" alt="Empathy Map 1" style="max-width: 55%;">
+                            </div>
+                            <div class="slides">
+                                <img src="images/work/sellesley/empathymap2.png" alt="Empathy Map 2" style="max-width: 55%;">
+                            </div>
+                            <div class="slides">
+                                <img src="images/work/sellesley/empathymap3.png" alt="Empathy Map 3" style="max-width: 55%;">
+                            </div>
+                            <div class="slides">
+                                <img src="images/work/sellesley/empathymap4.png" alt="Empathy Map 4" style="max-width: 55%;">
+                            </div>
+
+                            <!--forwards/backwards buttons-->
+                            <a class="prevButton" onclick="moveSlide(-1)">&#10094;</a>
+                            <a class="nextButton" onclick="moveSlide(1)">&#10095;</a>
+                        </div>
+
+                        <!--dots/circles for slideshow-->
+                        <div style="text-align: center; padding-top: 5px;">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                            <span class="dot" onclick="currentSlide(4)"></span>
+                        </div>
+                        <p>blah blah insert info about empathy maps and user profiles here</p>
+                    </div>
+            
+                    <div class="develop">
+                        <b>Part 2: Wireframe Prototype &amp; User Testing</b>
+                        <p>add info here</p>
+                    </div>
+                    
+                    <div class="develop">
+                        <b>Part 3: Heuristic Evaluation</b> 
+                        <p>add info here</p>  
+                    </div>
+                    
+                    <div class="develop">
+                        <b>Part 4: Final Prototype (Figma)</b> 
+                        <p>add info here</p>  
+                    </div>
+            </div>
+            
+            
+            <div class="footer">
+                <p>Made by Emma Lim.</p>
+                <a class="social-icons" href="https://www.linkedin.com/in/lim-emma" target="_blank" style="padding-right:10px"><img src="images/footer/linkedin.png" style="max-width: 25px" alt="github"></a>
+                <a class="social-icons" href="https://github.com/emmalim" target="_blank"><img src="images/footer/github.png" style="max-width: 25px" alt="github"></a>
+            </div>
+        </main>
+        
+        
+        <script src="javascript/manualSlideshow.js"></script>
+        <script src="javascript/portfolio.js"></script>
+    </body>
+</html>
