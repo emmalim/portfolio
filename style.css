@@ -428,7 +428,9 @@ li{
         display: none;
     }
     
-
+    #projPicDesktop{
+        text-align: center;
+    }
     
     .slideshow-container{
         width: 65%;
