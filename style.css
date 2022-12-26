@@ -339,6 +339,10 @@ li{
     #projPicDesktop {
         display: block;
     }
+    
+    #indexSpacer{
+        display: block;
+    }
 }
 
 @media screen and (min-width:796px){ /*larger than phone*/
@@ -444,6 +448,7 @@ li{
         width: 400px;
         height: 225px;
     }
+    
 }
 
 @media screen and (max-width: 600px) {
@@ -451,5 +456,6 @@ li{
         width: 350px;
         height: 197px;
     }
+    
 }
 
