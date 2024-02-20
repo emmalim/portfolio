@@ -1,0 +1,477 @@
+/* Filename: style.css
+   Author: Emma Lim
+   Date Modified: October 25, 2022
+*/
+
+/*ALL PAGES IN ALL FORMATS-------------------------------------------------------*/
+* {
+    box-sizing: border-box;
+}
+    
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+[class*="col-"] {
+    float: left;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+body {
+    color: black;
+    background-color: white;
+    padding: 0;
+    font-family: 'Lato', 'Helvetica', sans-serif;
+
+}
+
+main {
+    width: 100%;
+    float: right; 
+    font-size: 1rem;
+    margin-right: 0;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    column-count: 2;
+}
+
+/*EDITING TEXT-----------------------------------------------EDITING TEXT*/
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+h1{
+    font-weight: normal;
+}
+
+h4{
+    font-size: 1.15em;
+    margin-bottom: 0.2em;
+    margin-top: 0;
+}
+
+#textLink{
+    color: blue;
+}
+
+/*NAV BAR----------------------------------------------------------------------*/
+nav {
+    font-family: "Inter", "Helvetica", sans-serif;
+    width: 100%;
+    box-shadow: 0px 10px 20px 0px #dee0e3;
+    
+}
+
+.navBar {
+    padding-left: 2%;
+    height: 10%;
+    font-size: 30px;
+}
+
+.navBar h3 {
+    margin: 0;
+    float: left;
+}
+ 
+#navItems{
+    display: none;
+}
+
+#mobileNav{ /*img of the three lines in top right corner*/
+    display: inherit;
+    padding-right: 2%;
+    padding-top: 1%;
+    margin: 0;
+}
+
+.navButton{ /*the navbar button for mobile*/
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown{ /*container for button and dropdown menu*/
+    display: inline-block;
+    position: relative;
+    float: right;
+}
+
+#dropdownMenu{ /*the actual dropdown menu (hidden by default)*/
+    display: none;
+    position: absolute;
+    padding-top: 8%;
+    background-color: white;
+    padding: 16px;
+    right: 0;
+    box-shadow: 0px 10px 10px 0px #dee0e3;
+    z-index: 10;
+}
+
+#dropdownMenu a{ /*links in the dropdown menu*/
+    display: block;
+    text-align: right;
+    padding-bottom: 15px;
+}
+
+/*
+.dropdown:hover .dropdownMenu {
+  display: block;
+}
+*/
+
+.show {display:block;} /*show the menu*/
+
+/*.nav {
+    margin-top: 25%;
+}*/
+
+/*.nav div{
+    list-style: none;
+    margin-bottom: 10%;
+}*/
+
+#page{
+    margin-bottom: 8%;
+    width: 25%;
+}
+
+#pageTitle{
+    text-align:center; 
+    margin-bottom: 4%;
+}
+
+/*ABOUT PAGE-------------------------------------------------------------------*/
+#indexPic{
+    padding: 0;
+    margin: auto;
+    text-align: center;
+    width: 85%;
+}
+
+#indexText{
+    margin: auto;
+    line-height: 1.7em;
+}
+
+
+#bioPic{
+    padding:0;
+    margin:0;
+    text-align: center;
+}
+
+#bioText{
+    margin-top: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    float: center;
+    line-height: 1.7em;
+}
+
+
+#playlists{
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    float: center;
+}
+
+#slideCaptions{
+    font-size: 0.85rem;
+    text-align: center;
+    font-style: italic;
+}
+
+#captions{
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+/*WORK PAGE--------------------------------------------------------------------*/
+#projPic{
+    margin: auto;
+    text-align: center;
+}
+
+#projCard img {
+    width: 100%;
+}
+
+#projPicMobile {
+    display: inline-block;
+    text-align: center;
+}
+
+#projPicDesktop {
+    display: none;
+}
+
+#projCard img:hover {
+    opacity: 0.5;
+}
+
+#projText{
+    margin: auto;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+#projText h3 {
+    margin-bottom: 0;
+}
+
+#projText subtitle{
+    font-size: 1rem;
+}
+
+#projCard{
+    margin-bottom: 2%;
+    align-items: center;
+}
+
+#projType {
+    display: flex;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+
+.thumbnail{
+    width: 70%;
+}
+
+.content{
+    padding-top: 2%;
+}
+
+#projPreview {
+    display: flex;
+    text-align: center;
+    margin-top: 5%;
+}
+
+
+#projInfo{
+    padding: 5%;
+    padding-top: 2%;
+    line-height: 1.7em;
+}
+
+#projInfo h3{
+    font-size: 1.5rem;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+
+.develop{
+    padding-bottom: 2%;
+}
+
+
+.develop p{
+    margin-bottom: 2%;;
+    margin-top: 0;
+}
+
+.desc{
+    margin-bottom: 3%;
+    max-width: 80%;
+    padding-left: 2%;
+}
+
+/*tried to change the work gallery image on hover, this isn't working though*/
+#testBlock{
+    background-image: url("/images/work/VR/gallery_VR_0") no-repeat;
+}
+
+#testBlock:hover{
+    background-image: url("/images/work/VR/gallery_VR_1") no-repeat;
+}
+
+li{
+    margin-bottom: 1%;;
+}
+
+/*FOOTER-----------------------------------------------------------------------*/
+.footerText{
+    font-size: 1rem;
+    position: relative;
+    margin-left: 2%;
+    margin-top: 5%;
+    max-height: 50px;
+}
+
+.footer{
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+.footer p{
+    margin-bottom: 1%;
+}
+
+/*FLEX CONTAINER---------------------------------------------------------------*/
+
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 900px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    #projPicMobile {
+        display: none;
+    }
+    
+    #projPicDesktop {
+        display: block;
+    }
+    
+    #indexSpacer{
+        display: block;
+    }
+}
+
+@media screen and (min-width:796px){ /*larger than phone*/
+    
+    nav {
+        font-family: "Inter", "Helvetica", sans-serif;
+        font-size: 30px;
+        width: 24%;
+        float: left;
+        position: fixed;
+        box-shadow: 5px 10px 20px 5px #dee0e3;
+        height: 100%;
+    }
+
+    .navBar {
+        padding-top: 100px;
+        margin-left: 12%;
+        height: 100%;
+    }
+    
+    .navBar h3 {
+        margin-bottom: 50px;
+    }
+
+    
+    #logo {
+        width: 80%;
+    }
+    
+    .nav div{
+        list-style: none;
+        margin-bottom: 10%;
+    }
+
+    #page{
+        margin-bottom: 25px;
+    }
+
+    .footer{
+        text-align: center;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    
+    /*.left {
+        width: 20%;
+        float: left;
+    }*/
+    
+    main {
+        width: 70%;
+        float: right; 
+        margin-right: 2%;
+        padding: 0;
+        font-family: "Helvetica", "Arial", sans-serif;
+        font-size: 1rem;
+    }
+    
+    #indexPic{
+        max-width: 45%;
+    }
+
+    
+    #projPic{
+        margin: 0;
+        text-align: none;  
+    }
+    
+    #projCard img {
+        max-width: 80%;
+    }
+    
+    .thumbnail{
+        width: 50%;
+    }
+    
+    #projText{
+        font-size: 2rem;
+    }
+    
+    #navItems{
+        display: contents;
+    }
+    
+    .dropdown{
+        display: none;
+    }
+    
+    #projPicDesktop{
+        text-align: center;
+    }
+    
+    .slideshow-container{
+        width: 65%;
+    }
+    
+    
+}
+
+@media screen and (min-width: 651px and max-width:  795px){
+    #video iframe{
+        width: 400px;
+        height: 225px;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    #video iframe{
+        width: 350px;
+        height: 197px;
+    }
+    
+}
+
