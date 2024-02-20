@@ -35,8 +35,7 @@ body {
     color: black;
     background-color: white;
     padding: 0;
-    font-family: "Helvetica", "Arial", sans-serif;
-
+    font-family: 'Lato', 'Helvetica', sans-serif;
 }
 
 main {
@@ -78,7 +77,7 @@ h4{
 
 /*NAV BAR----------------------------------------------------------------------*/
 nav {
-    font-family: "Inter", "Helvetica", sans-serif;
+    font-family: "Lato", "Helvetica", sans-serif;
     width: 100%;
     box-shadow: 0px 10px 20px 0px #dee0e3;
     
@@ -364,7 +363,7 @@ li{
 @media screen and (min-width:796px){ /*larger than phone*/
     
     nav {
-        font-family: "Inter", "Helvetica", sans-serif;
+        font-family: "Lato", "Helvetica", sans-serif;
         font-size: 30px;
         width: 24%;
         float: left;
@@ -414,7 +413,7 @@ li{
         float: right; 
         margin-right: 2%;
         padding: 0;
-        font-family: "Helvetica", "Arial", sans-serif;
+        font-family: "Lato", "Helvetica", sans-serif;
         font-size: 1rem;
     }
     
