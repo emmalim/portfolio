@@ -70,12 +70,22 @@ h1{
     padding-top: 2%;
     border-bottom: solid;
     border-top: solid;
+    font-size:2em;
+}
+
+h2{
+    font-weight: bold;
+    font-size: 2.5em;
+    margin-top:0;
+    padding-top: 5%;
 }
 
 h4{
-    font-size: 1.15em;
+    font-size: 1.5em;
     margin-bottom: 0.2em;
     margin-top: 0;
+    font-family:"Oswald","Helvetica",sans-serif;
+    font-weight:500;
 }
 
 #textLink{
@@ -312,7 +322,8 @@ nav {
 
 
 .develop{
-    padding-bottom: 2%;
+    margin-bottom: 2%;
+    padding-bottom:2%;
 }
 
 
@@ -326,6 +337,22 @@ nav {
     max-width: 80%;
     padding-left: 2%;
 }
+
+/*CSS for project description box*/
+.projDesc{
+    display:flex;
+    margin-bottom:5%;
+}
+.projDesc p{
+    margin:0;
+}
+
+.projDescCol{
+    width:33%; 
+    display:inline-block;
+    padding-right:10%;
+}
+
 
 /*tried to change the work gallery image on hover, this isn't working though*/
 #testBlock{
