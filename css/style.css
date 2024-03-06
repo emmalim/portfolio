@@ -58,12 +58,18 @@ a{
     color: black;
 }
 
+
 a:hover{
     text-decoration: underline;
 }
 
+
 h1{
     font-weight: normal;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    border-bottom: solid;
+    border-top: solid;
 }
 
 h4{
@@ -78,7 +84,7 @@ h4{
 
 /*NAV BAR----------------------------------------------------------------------*/
 nav {
-    font-family: "Inter", "Helvetica", sans-serif;
+    font-family: "Lato", "Helvetica", sans-serif;
     width: 100%;
     box-shadow: 0px 10px 20px 0px #dee0e3;
     
@@ -97,6 +103,11 @@ nav {
  
 #navItems{
     display: none;
+}
+
+#navItems a:hover {
+    border-bottom: solid;
+    text-decoration: none;
 }
 
 #mobileNav{ /*img of the three lines in top right corner*/
@@ -135,6 +146,7 @@ nav {
     padding-bottom: 15px;
 }
 
+
 /*
 .dropdown:hover .dropdownMenu {
   display: block;
@@ -172,9 +184,14 @@ nav {
 
 #indexText{
     margin: auto;
-    line-height: 1.7em;
+    line-height: 1.5em;
 }
 
+#indexPage{
+    padding-bottom: 2%;
+    padding-top: 2%;
+    margin-bottom: 5%;
+}
 
 #bioPic{
     padding:0;
@@ -188,7 +205,7 @@ nav {
     padding-right: 5%;
     text-align: center;
     float: center;
-    line-height: 1.7em;
+    line-height: 1.5em;
 }
 
 
@@ -244,13 +261,21 @@ nav {
     margin-bottom: 0;
 }
 
+/*
 #projText subtitle{
+    font-size: 1rem;
+}
+*/
+
+#projText p{
     font-size: 1rem;
 }
 
 #projCard{
     margin-bottom: 2%;
     align-items: center;
+    border-bottom: dotted;
+    padding-bottom: 2%;
 }
 
 #projType {
@@ -262,12 +287,9 @@ nav {
 }
 
 .thumbnail{
-    width: 70%;
+    width: 80%;
 }
 
-.content{
-    padding-top: 2%;
-}
 
 #projPreview {
     display: flex;
@@ -364,13 +386,14 @@ li{
 @media screen and (min-width:796px){ /*larger than phone*/
     
     nav {
-        font-family: "Inter", "Helvetica", sans-serif;
+        font-family: "Lato", "Helvetica", sans-serif;
         font-size: 30px;
         width: 24%;
         float: left;
         position: fixed;
         box-shadow: 5px 10px 20px 5px #dee0e3;
         height: 100%;
+
     }
 
     .navBar {
@@ -386,6 +409,7 @@ li{
     
     #logo {
         width: 80%;
+        padding-top: 2%;
     }
     
     .nav div{
@@ -414,7 +438,7 @@ li{
         float: right; 
         margin-right: 2%;
         padding: 0;
-        font-family: "Helvetica", "Arial", sans-serif;
+        font-family: "Lato", "Arial", sans-serif;
         font-size: 1rem;
     }
     
@@ -422,6 +446,10 @@ li{
         max-width: 45%;
     }
 
+    #indexPage{
+        padding-bottom: 2%;
+        margin-bottom: 5%;
+    }
     
     #projPic{
         margin: 0;
@@ -431,6 +459,7 @@ li{
     #projCard img {
         max-width: 80%;
     }
+    
     
     .thumbnail{
         width: 50%;
