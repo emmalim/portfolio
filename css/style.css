@@ -544,6 +544,10 @@ li{
         height: 197px;
     }
     
+    h1{
+        border-top:solid 1px;
+        border-bottom:solid 1px;
+    }
     
 }
 
