@@ -332,6 +332,10 @@ nav {
     margin-top: 0;
 }
 
+.develop a{
+    text-decoration:underline;
+}
+
 .desc{
     margin-bottom: 3%;
     max-width: 80%;
@@ -353,6 +357,13 @@ nav {
     padding-right:10%;
 }
 
+.projImg img{
+    max-width:100%;
+}
+
+.projImg{
+    margin-bottom: 2%;
+}
 
 /*tried to change the work gallery image on hover, this isn't working though*/
 #testBlock{

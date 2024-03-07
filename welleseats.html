@@ -59,10 +59,11 @@
                             <p>React Native</p>
                             <p>Javascript</p>
                             <p>Firebase</p>
+                            <p>Git</p>
                         </div>
                         <div class="projDescCol">
                             <h4>TIMELINE</h4>
-                            <p>6 weeks</p>
+                            <p>8 weeks</p>
                         </div>
                     </div>
                     
@@ -73,35 +74,52 @@
                     
                     <div class="develop">
                         <h4>Problem Statement</h4>
-                        <p>Food quality at Wellesley’s dining halls can vary greatly depending on the meal/location and the Wellesley Fresh online menus don’t always accurately display what is being served. </p>
+                        <p>Food quality at Wellesley’s dining halls can vary greatly depending on the meal/location and the Wellesley Fresh online menus don’t always accurately display what is being served.</p>
                     </div>
                     
                     <div class="develop">
                         <h4>Project Goals</h4> 
-                        <p>WellesEats aims to give students a centralized social platform that provides them with more information about the food being served for each meal in addition to giving feedback on the food they’ve eaten. It serves to supplement the AVI online menus that currently exists with student reviews rather than replace or recreate it.
-                        </p>
+                        <p>WellesEats aims to serve as a <b>centralized platform</b> that provides students with more information about the food being served for each meal in addition to giving feedback on the food they’ve eaten. It would act as a supplement to the AVI online menus that currently exist rather than replace or recreate it.</p>
                     </div>
                 
                     
                     <h2 class="workHeading">DEVELOPMENT</h2>
+                                      
                     <div class="develop">
-                        <h4>Ideation</h4> 
-                        <p>TEXT HERE</p>  
-                    </div>
-                    
-                    <div class="develop">
-                        <h4>Prototyping</h4> 
-                        <p>TEXT HERE</p>  
+                        <h4>Ideation + Prototyping</h4> 
+                        <p>To plan out the features of our app, we needed to consider what kind of functionalities a review-posting app would have. We knew our users would be reading and writing data from our database so we would have to have screens with forms for users to fill out either their account information or review information. To read information from the database, we would need to have screens that display reviews and screens that display each review's details.</p>
+                        <p>To fully conceptualize the flow of our app, I created a <a href="https://www.figma.com/proto/6ZVlsFghGkC812W60dUPNG/WellesEats?type=design&node-id=1-2&t=OPZS1jNOLabZ9huP-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2&show-proto-sidebar=1&mode=design">low-fidelity prototype</a> using Figma. Planning out each screen and interaction helped us think about how to approach implementing certain features and how to store our data.</p>  
                     </div>
                     
                     <div class="develop">
                         <h4>Coding</h4> 
-                        <p>TEXT HERE</p>  
+                        <p>Before coding our project, we needed to create our Firebase project for users to read and write data to. <b>I setup our Firestore database</b> to contain 2 collections: Users and Posts. The Users collection would store documents with each user's account details while documents stored in the Posts collection would contain data collected in a user's meal review.</p> 
+                        <div class="projImg">
+                            <img src="images/work/welleseats/firebaseImg2.png" alt="Firebase data storage screenshot">
+                        </div>
+                        <p>After setting up our database, we began developing the screens. As the first interaction users would have with our app is logging in/signing up, <b>I created the Login and Sign-Up pages</b>. The Sign-Up page consists of a form that writes a new document to the Users collection in addition to adding the user to the Firebase authentication section. Similarly, the Login page compares the email and password inputted by the user with the email and password stored in Firebase's authentication section. To ensure that only Wellesley students are able to use our app and to hold our users accountable for what they post, I setup our account creation functionality to check if the user's email ends with "@wellesley.edu" and send a verification email to the user.</p>
+                        
+                        <div class="projImg" style="text-align:center;">
+                            <img src="images/work/welleseats/login.jpg" alt="WellesEats Login page" style="width:50%;vertical-align:middle;">
+                        </div>
+                        
+                        <p>Once account creation and login were fully functional, <b>I developed the Edit Profile feature</b> of our app. Editing a user's profile read their profile information from their account document and allowed users to update their display name, pronouns, and add a profile image. These features allowed users to add a personal touch to their accounts. </p>
+                        
+                        <div class="projImg" style="text-align:center">
+                            <img src="images/work/welleseats/editProfile.jpg" alt="WellesEats Edit Profile page" style="width:50%;">
+                        </div>
+                        
+                        <p>The next feature to implement was displaying the user's profile information on their Profile page. This required reading data from the user's account document as well. An additional core function we wanted to include in our app was allow users to view their previously uploaded posts. We decided to display all posts made by a user on their Profile page, as it contains information personalized to them. To implement this, <b>I created Javascript functions that parsed through documents in the Posts collection</b>, finding each document whose author matched the logged-in user's username. While our Figma prototype displays the posts as images on the Profile page, we were only able to display posts' titles, location, and meal time due to time constaints.</p>
+                        
+                        <p>At this point in WellesEats' development, my partner had created the upload post and main feed features. Since I had experience reading and writing images to Firebase's image storage section, <b>I implemented image upload and display for review posts</b> as well.</p>
+                        
+                        <p>Once our core features were functional, I debugged issues displaying post data, filtering and conducted user testing.</p>
                     </div>
                     
                     <div class="develop">
                         <h4>Reflection</h4> 
-                        <p>TEXT HERE</p>  
+                        <p>Given the time constraints of this project, we unfortunately were not able to include every feature we had planned. In future iterations of this project, we would like to implement social features such as following other users, viewing other users' feeds, and upvoting/downvoting posts based on how helpful they were.</p> 
+                        <p>The most prominent challenge I faced while working on this project was uploading images to the Firestore database. Images in Firebase are stored in Firebase's own storage section, separate from the collections storing each document.</p>
                     </div>
             </div>
             
