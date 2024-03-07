@@ -521,7 +521,7 @@ li{
         width: 65%;
     }
     
-    
+
 }
 
 @media screen and (min-width: 651px and max-width:  795px){
@@ -530,15 +530,20 @@ li{
         height: 225px;
     }
     
-
+    h1{
+        border-top:solid 1px;
+        border-bottom:solid 1px;
+    }
     
 }
+
 
 @media screen and (max-width: 600px) {
     #video iframe{
         width: 350px;
         height: 197px;
     }
+    
     
 }
 
